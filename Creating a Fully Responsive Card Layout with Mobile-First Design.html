@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      padding: 0 15px;
+      color: #555;
+    }
+
+    .card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Medium screens (600px - 1024px) */
+    @media (min-width: 600px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Large screens (>1024px) */
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://cdn.masaischool.com/masai-website/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Image 1">
+      <h3>Card Title 1</h3>
+      <p>This is a description for card 1. It adjusts on screen sizes.</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn.masaischool.com/masai-website/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Image 2">
+      <h3>Card Title 2</h3>
+      <p>This is a description for card 2. It adjusts on screen sizes.</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn.masaischool.com/masai-website/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Image 3">
+      <h3>Card Title 3</h3>
+      <p>This is a description for card 3. It adjusts on screen sizes.</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn.masaischool.com/masai-website/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Image 4">
+      <h3>Card Title 4</h3>
+      <p>This is a description for card 4. It adjusts on screen sizes.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+
+</body>
+</html>
